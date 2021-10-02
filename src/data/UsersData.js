@@ -1,14 +1,14 @@
 const customerData = [
   {
-    firstName: 'Joshua',
+    firstName: 'Joshua', //dd
+    lastName: 'Kwesi', //dd
+    about: 'Tall dark and handsome', //dd
+    image: 'c07319ad-2787-4d74-8b65-fa083863541a.jpeg', //dd
+    incidents: 0, //dd
     country: 'ghana',
     address: '26 switchback rd, accra, ghana',
     city: 'accra metropolis',
-    lastName: 'Kwesi',
     email: 'newornuj@yahoo.com',
-    about: 'Tall dark and handsome',
-    image: 'c07319ad-2787-4d74-8b65-fa083863541a.jpeg',
-    incidents: 0,
     status: 'verified',
     isAdmin: true,
     phone: '+233541946053',

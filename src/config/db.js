@@ -4,7 +4,7 @@ const connectDB = async () => {
   try {
     const conn = await mongoose.connect(
       // 'mongodb://localhost:27017/guardaround',
-      'mongodb://guardaround:guardaround@cluster0-shard-00-00.m3ilv.mongodb.net:27017,cluster0-shard-00-01.m3ilv.mongodb.net:27017,cluster0-shard-00-02.m3ilv.mongodb.net:27017/guardaround?ssl=true&replicaSet=atlas-iq8sq4-shard-0&authSource=admin&retryWrites=true&w=majority',
+      'mongodb+srv://hamid2117:hamid2117@cluster0.2wgw0.mongodb.net/guardAround?retryWrites=true&w=majority',
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,

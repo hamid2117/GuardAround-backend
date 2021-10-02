@@ -74,10 +74,13 @@ const userSchema = mongoose.Schema(
       type: Number,
       default: 0,
     },
+    codee: {
+      type: String,
+    },
     status: {
       type: String,
       enum: ['deleted', 'verified', 'unverified'],
-      default: 'verified',
+      default: 'unverified',
       index: true,
     },
     type: {
