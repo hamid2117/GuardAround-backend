@@ -91,10 +91,9 @@ router.post(
   '/incident',
   protect,
   asyncHandler(async (req, res) => {
-    const { status, type, title, description, coordinates } = req.body
+    const { type, title, description, coordinates } = req.body
 
     const incident = new Incidents({
-      status,
       user: req.user._id,
       location: { type: 'Point', coordinates },
       type,
