@@ -90,14 +90,13 @@ router.get(
 router.post(
   '/incident',
   protect,
-  admin,
   asyncHandler(async (req, res) => {
-    const { status, type, title, description } = req.body
+    const { status, type, title, description, coordinates } = req.body
 
     const incident = new Incidents({
       status,
       user: req.user._id,
-      location: { type: 'Point', coordinates: [0, 0] },
+      location: { type: 'Point', coordinates },
       type,
       title,
       description,

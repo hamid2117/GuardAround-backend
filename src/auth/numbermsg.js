@@ -1,5 +1,5 @@
 const accountSid = 'AC184e529c116e568ad62609591e04298d'
-const authToken = '0338fe1a6da05d6873233f021e583251'
+const authToken = '5f6b2ebb622ec299a406fa2df08ba5ac'
 import twilio from 'twilio'
 
 const sendSms = (req, res, next) => {
@@ -19,7 +19,7 @@ const sendSms = (req, res, next) => {
         next()
       })
       .catch((e) => {
-        console.log('Error :', e)
+        console.log('Errorrr :', e)
         next(e)
       })
   )
